@@ -7,6 +7,6 @@
 </div>
 <div class="practiceSample">
 <app-authors></app-authors>
-<favourite [checked] = "post.checked"></favourite>
+<favourite [checked] = "post.checked" (changed)="onFavouriteChanged($event)"></favourite>
 
 </div>

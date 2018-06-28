@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'favourite',
@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FavouriteComponent implements OnInit {
   @Input() checked:string;
+  @Output() changed = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
@@ -17,5 +19,9 @@ export class FavouriteComponent implements OnInit {
     }else{
       this.checked="fas fa-star"
     }
+    this.changed.emit({newValue:this.checked});
   }
+}
+export interface FavouriteChangedEventArgs{
+  newValue:string
 }
