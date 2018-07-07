@@ -6,8 +6,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./favourite.component.css']
 })
 export class FavouriteComponent implements OnInit {
-  @Input() checked:string;
-  @Output() changed = new EventEmitter();
+  @Input('checked') checked:string;
+  @Output('changed') changed = new EventEmitter();
 
   constructor() { }
 

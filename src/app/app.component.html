@@ -8,5 +8,5 @@
 <div class="practiceSample">
 <app-authors></app-authors>
 <favourite [checked] = "post.checked" (changed)="onFavouriteChanged($event)"></favourite>
-
+<like [isLiked]="post.isLiked" [likeCount]="post.likeCount"></like>
 </div>

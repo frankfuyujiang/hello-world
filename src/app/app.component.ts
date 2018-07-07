@@ -10,7 +10,9 @@ import { FavouriteChangedEventArgs } from './favourite/favourite.component'
 export class AppComponent {
    post = {
   	title:'app',
-  	checked:"far fa-star"
+  	checked:"far fa-star",
+  	isLiked:false,
+  	likeCount:0
   }
 
   onFavouriteChanged(eventArgs: FavouriteChangedEventArgs){

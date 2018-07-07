@@ -6,14 +6,16 @@ import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 import { FormsModule } from '@angular/forms';
 import { SampletextPipe } from './sampletext.pipe';
-import { FavouriteComponent } from './favourite/favourite.component'
+import { FavouriteComponent } from './favourite/favourite.component';
+import { LikeComponent } from './like/like.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorsComponent,
     SampletextPipe,
-    FavouriteComponent
+    FavouriteComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
