@@ -7,7 +7,8 @@ import { AuthorsService } from './authors.service';
 import { FormsModule } from '@angular/forms';
 import { SampletextPipe } from './sampletext.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
-import { LikeComponent } from './like/like.component'
+import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LikeComponent } from './like/like.component'
     AuthorsComponent,
     SampletextPipe,
     FavouriteComponent,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

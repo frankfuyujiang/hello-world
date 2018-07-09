@@ -1,0 +1,10 @@
+.fa {
+	float: right;
+}
+.expanded{
+	background-color: gray;
+}
+.headerfont{
+	font-weight: bold;
+	cursor:pointer;
+}

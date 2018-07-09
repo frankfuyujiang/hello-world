@@ -1,0 +1,12 @@
+<div class="card">
+	<div class="card-body headerfont" [class.expanded]="panelOpen" (click)="panelClick()">
+		{{title}} 
+		<i class="fa" 
+		[class.fa-angle-down]="!panelOpen"
+		[class.fa-angle-up]="panelOpen"
+		 aria-hidden="true"></i>
+	</div>
+	<div  *ngIf="panelOpen" class="card-body">
+		<ng-content></ng-content>
+	</div>
+</div>
