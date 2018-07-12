@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { SampletextPipe } from './sampletext.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { LikeComponent } from './like/like.component';
-import { ZippyComponent } from './zippy/zippy.component'
+import { ZippyComponent } from './zippy/zippy.component';
+import { CourseFormComponent } from './course-form/course-form.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ZippyComponent } from './zippy/zippy.component'
     SampletextPipe,
     FavouriteComponent,
     LikeComponent,
-    ZippyComponent
+    ZippyComponent,
+    CourseFormComponent
   ],
   imports: [
     BrowserModule,
